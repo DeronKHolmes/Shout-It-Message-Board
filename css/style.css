@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+	font-size: 15px;
+	line-height: 1.5em;
+	background: #f4f4f4;
+}
+
+#container {
+	background: #333333;
+	margin: 50px auto;
+	overflow: auto;
+	width: 60%;
+	min-height: 630px;
+}
+
+header h1 {
+	color: #ffffff;
+	font-size: 22px;
+	padding: 15px 0 10px 10px;
+	border-bottom: 1px solid #ffffff;
+}
+
+#shouts {
+	/* 90% of the parent div which is the container */
+	width: 90%;
+	/**/
+	background: #f4f4f4;
+	height: 400px;
+	margin: 20px auto;
+	/* Once the shouts break out of the div you want to be able to scroll to them.*/
+	overflow: auto;
+}
+
+.shout {
+	list-style: none;
+	padding: 8;
+	border-bottom: 1px #cccccc dotted;
+}
+
+.shout span{
+	/* Lighter gray */
+	color: #aaaaaa;
+}
+
+#input {
+	width: 90%;
+	min-height: 80px;
+	margin: auto;
+	padding: 0;
+}
+
+#input input[type='text'] {
+	height: 42px;
+	width: 48.7%;
+	padding: 3px;
+	margin-bottom: 20px;
+	border: #666666 solid 1px;
+	font-size: 20px;
+}
+
+#input .shout-btn {
+	padding: 5px;
+	margin-bottom: 30px;
+	/* 10px top and bottom, auto for left and right */
+	/* margin: 10px auto; */
+
+    height: 50px;
+    width: 100%;
+    background-color:#FFF;
+    font-weight:bold;
+    border: solid #666 1px;
+    font-size: 15px;
+
+}
+
+.error{
+	background: red;
+	color: #ffffff;
+	padding: 5px;
+	margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 768px){
+	#input input[type='text']{
+		width: 98%;
+	}
+}
+
+@media only screen and (min-width: 769px){
+	#input input[type='text']{
+		width: 98%;
+	}
+}
+@media only screen and (min-width: 940px){
+	#input input[type='text']{
+		width: 48.7%;
+	}
+}
